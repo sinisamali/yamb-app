@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yamb</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <script src="js/index.js" type="module" defer></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <table class="table">
+        <tr class="table-header-row">
+          <th></th>
+          <th>
+            <div class="icon">
+              <img src="/img/icons/down.svg" alt="" />
+            </div>
+          </th>
+          <th>
+            <div class="icon"><img src="/img/icons/up.svg" alt="" /></div>
+          </th>
+          <th>
+            <div class="icon"><img src="/img/icons/updown.svg" alt="" /></div>
+          </th>
+          <th>
+            <div class="icon"><img src="/img/icons/announce.svg" alt="" /></div>
+          </th>
+          <th>
+            <div class="icon"><img src="/img/icons/hand3.svg" alt="" /></div>
+          </th>
+          <th>&Sigma;</th>
+        </tr>
+        <tr class="table-row" data-rowType="1">
+          <th>1</th>
+          <td data-field="downOne" data-type="down" data-column="down"></td>
+          <td data-field="upOne" data-type="up" data-column="up"></td>
+          <td data-field="freeOne" data-type="free" data-column="free"></td>
+          <td
+            data-field="announceOne"
+            data-type="announce"
+            data-column="announce"
+          ></td>
+          <td data-field="handOne" data-type="hand" data-column="hand"></td>
+        </tr>
+        <tr class="table-row" data-rowType="2">
+          <th>2</th>
+          <td data-field="downTwo" data-type="down" data-column="down"></td>
+          <td data-field="upTwo" data-type="up" data-column="up"></td>
+          <td data-field="freeTwo" data-type="free" data-column="free"></td>
+          <td
+            data-field="announceTwo"
+            data-type="announce"
+            data-column="announce"
+          ></td>
+          <td data-field="handTwo" data-type="hand" data-column="hand"></td>
+        </tr>
+        <tr class="table-row" data-rowType="3">
+          <th>3</th>
+          <td data-field="downThree" data-type="down" data-column="down"></td>
+          <td data-field="upThree" data-type="up" data-column="up"></td>
+          <td data-field="freeThree" data-type="free" data-column="free"></td>
+          <td
+            data-field="announceThree"
+            data-type="announce"
+            data-column="announce"
+          ></td>
+          <td data-field="handThree" data-type="hand" data-column="hand"></td>
+        </tr>
+        <tr class="table-row" data-rowType="4">
+          <th>4</th>
+          <td data-field="downFour" data-type="down" data-column="down"></td>
+          <td data-field="upFour" data-type="up" data-column="up"></td>
+          <td data-field="freeFour" data-type="free" data-column="free"></td>
+          <td
+            data-field="announceFour"
+            data-type="announce"
+            data-column="announce"
+          ></td>
+          <td data-field="handFour" data-type="hand" data-column="hand"></td>
+        </tr>
+        <tr class="table-row" data-rowType="5">
+          <th>5</th>
+          <td data-field="downFive" data-type="down" data-column="down"></td>
+          <td data-field="upFive" data-type="up" data-column="up"></td>
+          <td data-field="freeFive" data-type="free" data-column="free"></td>
+          <td
+            data-field="announceFive"
+            data-type="announce"
+            data-column="announce"
+          ></td>
+          <td data-field="handFive" data-type="hand" data-column="hand"></td>
+        </tr>
+        <tr class="table-row" data-rowType="6">
+          <th>6</th>
+          <td data-field="downSix" data-type="down" data-column="down"></td>
+          <td data-field="upSix" data-type="up" data-column="up"></td>
+          <td data-field="freeSix" data-type="free" data-column="free"></td>
+          <td
+            data-field="announceSix"
+            data-type="announce"
+            data-column="announce"
+          ></td>
+          <td data-field="handSix" data-type="hand" data-column="hand"></td>
+        </tr>
+        <tr class="table-sum-row">
+          <th>&Sigma;</th>
+          <th data-field="downResult" data-type="firstResult"></th>
+          <th data-field="upResult" data-type="firstResult"></th>
+          <th data-field="freeResult" data-type="firstResult"></th>
+          <th data-field="announceResult" data-type="firstResult"></th>
+          <th data-field="handResult" data-type="firstResult"></th>
+          <th></th>
+        </tr>
+        <tr class="table-row" data-rowType="max">
+          <th>Max</th>
+          <td
+            data-field="downMax"
+            data-type="downMinMax"
+            data-column="down"
+          ></td>
+          <td data-field="upMax" data-type="upMinMax" data-column="up"></td>
+          <td
+            data-field="freeMax"
+            data-type="freeMinMax"
+            data-column="free"
+          ></td>
+          <td
+            data-field="announceMax"
+            data-type="announceMinMax"
+            data-column="announce"
+          ></td>
+          <td
+            data-field="handMax"
+            data-type="handMinMax"
+            data-column="hand"
+          ></td>
+        </tr>
+        <tr class="table-row" data-rowType="min">
+          <th>Min</th>
+          <td
+            data-field="downMin"
+            data-type="downMinMax"
+            data-column="down"
+          ></td>
+          <td data-field="upMin" data-type="upMinMax" data-column="up"></td>
+          <td
+            data-field="freeMin"
+            data-type="freeMinMax"
+            data-column="free"
+          ></td>
+          <td
+            data-field="announceMin"
+            data-type="announceMinMax"
+            data-column="announce"
+          ></td>
+          <td
+            data-field="handMin"
+            data-type="handMinMax"
+            data-column="hand"
+          ></td>
+        </tr>
+        <tr class="table-sum-row">
+          <th>&Sigma;</th>
+          <th data-field="downMinMaxResult"></th>
+          <th data-field="upMinMaxResult"></th>
+          <th data-field="freeMinMaxResult"></th>
+          <th data-field="announceMinMaxResult"></th>
+          <th data-field="handMinMaxResult"></th>
+          <th></th>
+        </tr>
+        <tr class="table-row" data-rowType="straight">
+          <th>S</th>
+          <td
+            data-field="downStraight"
+            data-type="downPoker"
+            data-column="down"
+          ></td>
+          <td data-field="upStraight" data-type="upPoker" data-column="up"></td>
+          <td
+            data-field="freeStraight"
+            data-type="freePoker"
+            data-column="free"
+          ></td>
+          <td
+            data-field="announceStraight"
+            data-type="announcePoker"
+            data-column="announce"
+          ></td>
+          <td
+            data-field="handStraight"
+            data-type="handPoker"
+            data-column="hand"
+          ></td>
+          <th title="Show/hide cubes" class="hideShowBtn">Hide</th>
+        </tr>
+        <tr class="table-row" data-rowType="triling">
+          <th>T</th>
+          <td
+            data-field="downTriling"
+            data-type="downPoker"
+            data-column="down"
+          ></td>
+          <td data-field="upTriling" data-type="upPoker" data-column="up"></td>
+          <td
+            data-field="freeTriling"
+            data-type="freePoker"
+            data-column="free"
+          ></td>
+          <td
+            data-field="announceTriling"
+            data-type="announcePoker"
+            data-column="announce"
+          ></td>
+          <td
+            data-field="handTriling"
+            data-type="handPoker"
+            data-column="hand"
+          ></td>
+        </tr>
+        <tr class="table-row" data-rowType="full">
+          <th>F</th>
+          <td
+            data-field="downFull"
+            data-type="downPoker"
+            data-column="down"
+          ></td>
+          <td data-field="upFull" data-type="upPoker" data-column="up"></td>
+          <td
+            data-field="freeFull"
+            data-type="freePoker"
+            data-column="free"
+          ></td>
+          <td
+            data-field="announceFull"
+            data-type="announcePoker"
+            data-column="announce"
+          ></td>
+          <td
+            data-field="handFull"
+            data-type="handPoker"
+            data-column="hand"
+          ></td>
+        </tr>
+        <tr class="table-row" data-rowType="poker">
+          <th>P</th>
+          <td
+            data-field="downPoker"
+            data-type="downPoker"
+            data-column="down"
+          ></td>
+          <td data-field="upPoker" data-type="upPoker" data-column="up"></td>
+          <td
+            data-field="freePoker"
+            data-type="freePoker"
+            data-column="free"
+          ></td>
+          <td
+            data-field="announcePoker"
+            data-type="announcePoker"
+            data-column="announce"
+          ></td>
+          <td
+            data-field="handPoker"
+            data-type="handPoker"
+            data-column="hand"
+          ></td>
+        </tr>
+        <tr class="table-row" data-rowType="yamb">
+          <th>Y</th>
+          <td
+            data-field="downYamb"
+            data-type="downPoker"
+            data-column="down"
+          ></td>
+          <td data-field="upYamb" data-type="upPoker" data-column="up"></td>
+          <td
+            data-field="freeYamb"
+            data-type="freePoker"
+            data-column="free"
+          ></td>
+          <td
+            data-field="announceYamb"
+            data-type="announcePoker"
+            data-column="announce"
+          ></td>
+          <td
+            data-field="handYamb"
+            data-type="handPoker"
+            data-column="hand"
+          ></td>
+        </tr>
+        <tr class="table-sum-row">
+          <th>&Sigma;</th>
+          <th data-field="downPokerResult"></th>
+          <th data-field="upPokerResult"></th>
+          <th data-field="freePokerResult"></th>
+          <th data-field="announcePokerResult"></th>
+          <th data-field="handPokerResult"></th>
+          <th></th>
+        </tr>
+      </table>
+      <div class="numberDivWrapper">
+        <div class="numberDiv">
+          <div class="cubes">
+            <button class="cubeButton">
+              <img
+                class="diceCubes"
+                src="./img/default-dice/0.png"
+                alt="Dice"
+              />
+            </button>
+            <button class="cubeButton">
+              <img
+                class="diceCubes"
+                src="./img/default-dice/0.png"
+                alt="Dice"
+              />
+            </button>
+            <button class="cubeButton">
+              <img
+                class="diceCubes"
+                src="./img/default-dice/0.png"
+                alt="Dice"
+              />
+            </button>
+            <br />
+            <button class="cubeButton">
+              <img
+                class="diceCubes"
+                src="./img/default-dice/0.png"
+                alt="Dice"
+              />
+            </button>
+            <button class="cubeButton">
+              <img
+                class="diceCubes"
+                src="./img/default-dice/0.png"
+                alt="Dice"
+              />
+            </button>
+            <button class="cubeButton">
+              <img
+                class="diceCubes"
+                src="./img/default-dice/0.png"
+                alt="Dice"
+              />
+            </button>
+          </div>
+          <div class="buttonDiv">
+            <button class="diceBtn">Dice</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
